@@ -1,0 +1,654 @@
+==85807== Memcheck, a memory error detector
+==85807== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==85807== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==85807== Command: ./main
+==85807== Parent PID: 85799
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x10CC2F: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C985: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae608 is 40 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C991: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e8 is 8 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid free() / delete / delete[] / realloc()
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x10CC2F: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C985: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae608 is 40 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C991: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e8 is 8 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid free() / delete / delete[] / realloc()
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499EC38: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C95E: ZooKeeper::GetName[abi:cxx11]() (ZooKeeper.hpp:15)
+==85807==    by 0x10BB31: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:194)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae800 is 8 bytes after a block of size 56 alloc'd
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499EC3F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C95E: ZooKeeper::GetName[abi:cxx11]() (ZooKeeper.hpp:15)
+==85807==    by 0x10BB31: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:194)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae7f8 is 0 bytes after a block of size 56 alloc'd
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C24C: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x499C62D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10CAE8: ZooKeeper::operator=(ZooKeeper const&) (Enclosure.hpp:5)
+==85807==    by 0x10BDFE: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:210)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae800 is 8 bytes after a block of size 56 alloc'd
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 4
+==85807==    at 0x10CAED: ZooKeeper::operator=(ZooKeeper const&) (Enclosure.hpp:5)
+==85807==    by 0x10BDFE: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:210)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae818 is 24 bytes after a block of size 64 in arena "client"
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x10CAFB: ZooKeeper::operator=(ZooKeeper const&) (Enclosure.hpp:5)
+==85807==    by 0x10BDFE: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:210)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae820 is 32 bytes before a block of size 64 in arena "client"
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x10CC2F: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae730 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C985: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae758 is 40 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C991: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae738 is 8 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid free() / delete / delete[] / realloc()
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae730 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== Invalid read of size 8
+==85807==    at 0x10D733: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10AD25: Zoo::~Zoo() (Zoo.cpp:9)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x78 is not stack'd, malloc'd or (recently) free'd
+==85807== 
+==85807== 
+==85807== Process terminating with default action of signal 11 (SIGSEGV)
+==85807==  Access not within mapped region at address 0x78
+==85807==    at 0x10D733: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10AD25: Zoo::~Zoo() (Zoo.cpp:9)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  If you believe this happened as a result of a stack
+==85807==  overflow in your program's main thread (unlikely but
+==85807==  possible), you can try to increase the size of the
+==85807==  main thread stack using the --main-stacksize= flag.
+==85807==  The main thread stack size used in this run was 8388608.
+==85807== 
+==85807== HEAP SUMMARY:
+==85807==     in use at exit: 176 bytes in 2 blocks
+==85807==   total heap usage: 12 allocs, 15 frees, 75,456 bytes allocated
+==85807== 
+==85807== 24 bytes in 1 blocks are still reachable in loss record 1 of 2
+==85807==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10A491: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 152 bytes in 1 blocks are still reachable in loss record 2 of 2
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== LEAK SUMMARY:
+==85807==    definitely lost: 0 bytes in 0 blocks
+==85807==    indirectly lost: 0 bytes in 0 blocks
+==85807==      possibly lost: 0 bytes in 0 blocks
+==85807==    still reachable: 176 bytes in 2 blocks
+==85807==                       of which reachable via heuristic:
+==85807==                         newarray           : 152 bytes in 1 blocks
+==85807==         suppressed: 0 bytes in 0 blocks
+==85807== 
+==85807== ERROR SUMMARY: 26 errors from 18 contexts (suppressed: 0 from 0)
+==85807== 
+==85807== 1 errors in context 1 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x10D733: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10AD25: Zoo::~Zoo() (Zoo.cpp:9)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x78 is not stack'd, malloc'd or (recently) free'd
+==85807== 
+==85807== 
+==85807== 1 errors in context 2 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x10CAFB: ZooKeeper::operator=(ZooKeeper const&) (Enclosure.hpp:5)
+==85807==    by 0x10BDFE: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:210)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae820 is 32 bytes before a block of size 64 in arena "client"
+==85807== 
+==85807== 
+==85807== 1 errors in context 3 of 18:
+==85807== Invalid read of size 4
+==85807==    at 0x10CAED: ZooKeeper::operator=(ZooKeeper const&) (Enclosure.hpp:5)
+==85807==    by 0x10BDFE: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:210)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae818 is 24 bytes after a block of size 64 in arena "client"
+==85807== 
+==85807== 
+==85807== 1 errors in context 4 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C24C: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x499C62D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10CAE8: ZooKeeper::operator=(ZooKeeper const&) (Enclosure.hpp:5)
+==85807==    by 0x10BDFE: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:210)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae800 is 8 bytes after a block of size 56 alloc'd
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 1 errors in context 5 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499EC3F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C95E: ZooKeeper::GetName[abi:cxx11]() (ZooKeeper.hpp:15)
+==85807==    by 0x10BB31: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:194)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae7f8 is 0 bytes after a block of size 56 alloc'd
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 1 errors in context 6 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499EC38: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C95E: ZooKeeper::GetName[abi:cxx11]() (ZooKeeper.hpp:15)
+==85807==    by 0x10BB31: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:194)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae800 is 8 bytes after a block of size 56 alloc'd
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10BCF3: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:205)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 1 errors in context 7 of 18:
+==85807== Invalid free() / delete / delete[] / realloc()
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 1 errors in context 8 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C991: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e8 is 8 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 1 errors in context 9 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C985: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae608 is 40 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 1 errors in context 10 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x10CC2F: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 11 of 18:
+==85807== Invalid free() / delete / delete[] / realloc()
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae730 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 12 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C991: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae738 is 8 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 13 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C985: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae758 is 40 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 14 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x10CC2F: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10ACB4: Zoo::~Zoo() (Zoo.cpp:7)
+==85807==    by 0x10A531: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae730 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10BFC0: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:227)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 15 of 18:
+==85807== Invalid free() / delete / delete[] / realloc()
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 16 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C991: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e8 is 8 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 17 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x499C5F4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==85807==    by 0x10C985: Animal::~Animal() (Animal.hpp:7)
+==85807==    by 0x10CC5C: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae608 is 40 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== 
+==85807== 2 errors in context 18 of 18:
+==85807== Invalid read of size 8
+==85807==    at 0x10CC2F: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10D760: ZooKeeper::~ZooKeeper() (ZooKeeper.cpp:6)
+==85807==    by 0x10C02F: Zoo::assigned_Zoo_keeper(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:203)
+==85807==    by 0x10A826: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Address 0x4dae5e0 is 0 bytes inside a block of size 80 free'd
+==85807==    at 0x483D74F: operator delete[](void*) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CC72: Enclosure::~Enclosure() (Enclosure.cpp:6)
+==85807==    by 0x10B3C9: Zoo::AddEnclosure(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:84)
+==85807==    by 0x10B075: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:53)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807==  Block was alloc'd at
+==85807==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85807==    by 0x10CD0F: Enclosure::AddAnimal(Animal) (Enclosure.cpp:18)
+==85807==    by 0x10B02C: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:49)
+==85807==    by 0x10B0C7: Zoo::AddAnimal(Animal, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (Zoo.cpp:54)
+==85807==    by 0x10AE5B: Zoo::AddAnimal(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (Zoo.cpp:26)
+==85807==    by 0x10A61E: main (in /home/omer/Desktop/Section1Z00/main)
+==85807== 
+==85807== ERROR SUMMARY: 26 errors from 18 contexts (suppressed: 0 from 0)
